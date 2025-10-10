@@ -1,4 +1,81 @@
-body{
-    background-color: #174f70 ;
-    text-align: center;
+/* Custom CSS for Mariah Carey Page */
+
+/* 1. BASE STYLES: Aplicando o fundo principal e cor de texto geral */
+body {
+    font-family: Arial;
+    /* Aplicando a cor de fundo solicitada */
+    background-color:  #2c4864; 
+    /* Cor de texto padrão clara para contraste */
+    color: #1a344e; 
+}
+
+/* 2. LAYOUT E COMPONENTES */
+
+/* Navbar e Footer (Mantendo tons escuros para contraste com o corpo) */
+.bg-dark {
+    background-color: #0d2134 ; /* Um azul marinho mais profundo */
+}
+
+/* Cartões (Cards): Precisam ser mais claros que o fundo do body para se destacarem */
+.card {
+    background-color: #2c4765; /* Um azul escuro intermediário */
+    color: #f8f9fa;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Borda sutil */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+/* Títulos, Textos e Links para Legibilidade */
+h1, h2, h3, h4, h5 {
+    color: #ffffff;
+}
+
+/* Links em geral */
+a {
+    color: #b0c4de; /* Cor de link clara e visível */
+}
+a:hover {
+    color: #ffffff;
+}
+/* Links dentro de cartões */
+.card a {
+    color: #f8f9fa; 
+}
+
+/* Textos "muted" (ex: ano do álbum) */
+.text-muted {
+    color: #bdbdbd; 
+}
+
+
+
+/* 3. ESTILOS ESPECÍFICOS */
+
+/* Custom Font for Brand/Titles */
+.brand-font {
+    font-weight: 700;
+}
+
+/* Hero Section Styling */
+.hero-section {
+    min-height: 40vh; 
+    background: url('https://via.placeholder.com/1920x500?text=Mariah+Carey+Banner') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Overlay */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); 
+}
+
+/* Card Hover Effect */
+.album-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
 }
